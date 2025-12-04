@@ -1,8 +1,8 @@
 # 🐶🐱 Dog vs Cat Image Classifier (MobileNetV2)
 
-This project is a complete dog vs cat classifier built using MobileNetV2. Everything is explained in one continuous flow including dataset setup, installation, running files, training, prediction, requirements, and author information. No separate sections or splitting is used so the whole README stays in a single piece exactly as required.
+A complete Dog vs Cat classifier built using MobileNetV2. Everything is written in a clean, continuous, easy-to-read format without long paragraphs.
 
-The project folder looks like this:
+Project structure:
 dog-cat-classifier/
 ├── models/mobilenetv2_best.h5
 ├── src/train.py
@@ -12,29 +12,43 @@ dog-cat-classifier/
 ├── requirements.txt
 └── README.md
 
-To start using the project, first download the dog vs cat dataset from: https://www.kaggle.com/datasets/tongpython/cat-and-dog and after downloading, extract it inside the data folder so that your directory becomes:
-data/training_set/
-data/test_set/
-This dataset must not be uploaded to GitHub because it is too large.
+Dataset:
+- Download from: https://www.kaggle.com/datasets/tongpython/cat-and-dog
+- Extract into:
+  data/training_set/
+  data/test_set/
+- Do NOT upload dataset to GitHub.
 
-Once the dataset is ready, you need to install the project dependencies. Clone the repository and move inside it:
-git clone https://github.com/Nikhilyadav18/dog-cat-classifier.git
-cd dog-cat-classifier
-and install the required packages with:
-pip install -r requirements.txt
+Setup:
+git clone https://github.com/Nikhilyadav18/dog-cat-classifier.git  
+cd dog-cat-classifier  
+pip install -r requirements.txt  
 
-Now you can run the files of this project. To run the training file, use this command:
-python src/train.py
-This command trains the MobileNetV2 model using the images inside data/training_set and data/test_set. After training completes, the best model automatically gets saved at:
-models/mobilenetv2_best.h5
+Training:
+- Run: python src/train.py
+- Model gets saved automatically at: models/mobilenetv2_best.h5
 
-If you do not want to train and prefer using a ready model, then download it from your Google Drive or GitHub Releases link and place the file exactly at:
-models/mobilenetv2_best.h5
+Using Pretrained Model:
+- Download from Google Drive or GitHub Releases
+- Place file at: models/mobilenetv2_best.h5
 
-To run prediction, simply run the predict file with an image path. Use:
-python src/predict.py image.jpg
-The script loads the trained model, processes the image, and prints either Dog or Cat based on the model output. This is the same command you will run for any test image. Any image path will work as long as the file exists.
+Prediction:
+python src/predict.py image.jpg  
+- Outputs: Dog / Cat
 
-The important libraries used in this project are TensorFlow, OpenCV, NumPy, Matplotlib, and h5py. These are included in requirements.txt and installing them with pip ensures the training and prediction scripts work smoothly without errors.
+Requirements:
+- TensorFlow
+- OpenCV
+- NumPy
+- Matplotlib
+- h5py  
+(Already listed in requirements.txt)
 
-This project was created by Nikhil Yadav. More work can be found here: https://github.com/Nikhilyadav18. The project is available under the MIT License.
+Notes:
+- Keep models/ folder empty in repo except placeholder.
+- Never upload dataset or large model files to GitHub.
+
+Author:
+Nikhil Yadav  
+GitHub: https://github.com/Nikhilyadav18  
+License: MIT
