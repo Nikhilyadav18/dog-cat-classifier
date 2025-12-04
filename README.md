@@ -48,6 +48,13 @@ Notes:
 - Keep models/ folder empty in repo except placeholder.
 - Never upload dataset or large model files to GitHub.
 
+Download pretrained model:
+(https://drive.google.com/file/d/1N4g1pzl387elcxWadRwyair9GnBVE2HM/view?usp=sharing)
+
+Place it at:
+models/mobilenetv2_best.h5
+
+
 Author:
 Nikhil Yadav  
 GitHub: https://github.com/Nikhilyadav18  
